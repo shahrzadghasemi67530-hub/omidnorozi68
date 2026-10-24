@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مدیریت سایت نوروزی</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            font-family: sans-serif;
+        }
+
+        .admin-box {
+
+            width: 350px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+
+        }
+
+        .admin-box h2 {
+
+            margin-bottom: 25px;
+
+        }
+
+        .admin-box input {
+
+            width: 90%;
+            padding: 12px;
+            margin: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+
+        }
+
+        .admin-box button {
+
+            padding: 12px 35px;
+            border: none;
+            border-radius: 8px;
+            background: orange;
+            color: white;
+            cursor: pointer;
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="admin-box">
+
+
+    <h2>ورود مدیریت</h2>
+
+
+    <input 
+    type="text" 
+    id="username" 
+    placeholder="نام کاربری">
+
+
+    <input 
+    type="password" 
+    id="password" 
+    placeholder="رمز عبور">
+
+
+    <button onclick="login()">
+        ورود
+    </button>
+
+
+</div>
+
+
+
+<script>
+
+
+function login(){
+
+
+    let user = document.getElementById("username").value;
+
+    let pass = document.getElementById("password").value;
+
+
+
+    if(user === "omidnorozi" && pass === "norozi68326"){
+    alert("ورود موفق");
+    window.location.href = "panel.html";
+}
+
+    else{
+
+
+        alert("نام کاربری یا رمز عبور اشتباه است");
+
+
+    }
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>

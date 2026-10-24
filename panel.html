@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پنل مدیریت نوروزی</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 14px;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #101a14;
+    color: #202820;
+    line-height: 1.9;
+}
+
+.panel {
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px #0004;
+}
+
+h1 {
+    text-align: center;
+    color: #20452e;
+}
+
+.subtitle {
+    text-align: center;
+    color: #68746b;
+}
+</style>
+</head>
+<style>
+    .form-group {
+        margin-bottom: 18px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+    
+    input, textarea {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        font-family: inherit;
+        font-size: 14px;
+        border: 1px solid #ccd5cd;
+        border-radius: 9px;
+        background: #fbfcfb;
+    }
+    
+    textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+    
+    button {
+        padding: 12px;
+        border: 0;
+        border-radius: 9px;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    </style>
+    
+    <style>
+    .actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 24px;
+    }
+    
+    .save-btn {
+        background: #24613a;
+        color: white;
+    }
+    
+    .reset-btn {
+        background: #e8ece8;
+        color: #26362a;
+    }
+    
+    .status {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .note {
+        background: #fff6df;
+        border: 1px solid #f0dfae;
+        padding: 12px;
+        border-radius: 9px;
+        font-size: 13px;
+    }
+    
+    @media (max-width: 480px) {
+        .panel { padding: 18px; }
+        .actions { grid-template-columns: 1fr; }
+    }
+    </style>
+    
+    <body>
+    <div class="panel">
+    
+    <h1>پنل مدیریت نوروزی</h1>
+    <p class="subtitle">ویرایش اطلاعات کسب‌وکار</p>
+    
+    <div class="note">
+    اطلاعات را ویرایش کن و برای نگهداری آن‌ها روی ذخیره بزن.
+    </div>
+    
+    <form id="settingsForm">
+        <div class="form-group">
+            <label for="businessName">نام کسب‌وکار</label>
+            <input id="businessName" name="businessName"
+            value="خرید و فروش ضایعات روغنی خودرو (نوروزی)" required>
+            </div>
+            
+            <div class="form-group">
+            <label for="description">توضیحات کسب‌وکار</label>
+            <textarea id="description" name="description">خرید و فروش ضایعات روغنی خودرو؛ برای استعلام قیمت و هماهنگی تماس بگیرید.</textarea>
+            </div>
+            
+            <div class="form-group">
+            <label for="address">آدرس یا محدوده فعالیت</label>
+            <input id="address" name="address"
+            placeholder="شهر یا محدوده فعالیت">
+            </div>
+            
+            <div class="form-group">
+            <label for="hours">ساعات کاری</label>
+            <input id="hours" name="hours"
+            placeholder="مثلاً شنبه تا پنجشنبه، ۸ تا ۱۸">
+            </div>
+            <div class="form-group">
+                <label for="phone">شماره تماس اصلی</label>
+                <input id="phone" name="phone"
+                type="tel" value="09199394294" required>
+                </div>
+                
+                <div class="form-group">
+                <label for="phone2">شماره تماس دوم</label>
+                <input id="phone2" name="phone2"
+                type="tel" value="09904242887">
+                </div>
+                
+                <div class="form-group">
+                <label for="whatsapp">لینک واتساپ</label>
+                <input id="whatsapp" name="whatsapp"
+                type="url" value="https://wa.me/989199394294">
+                </div>
+                <div class="form-group">
+                    <label for="telegram1">لینک تلگرام اول</label>
+                    <input id="telegram1" name="telegram1"
+                    type="url" value="https://t.me/Noroziomid68">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="telegram2">لینک تلگرام دوم</label>
+                    <input id="telegram2" name="telegram2"
+                    type="url" value="https://t.me/noroziomid68526">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="rubika">لینک روبیکا</label>
+                    <input id="rubika" name="rubika"
+                    type="url" placeholder="لینک روبیکا">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="divar">لینک آگهی دیوار</label>
+                    <input id="divar" name="divar"
+                    type="url" placeholder="لینک آگهی دیوار">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="sheypoor">لینک آگهی شیپور</label>
+                    <input id="sheypoor" name="sheypoor"
+                    type="url" placeholder="لینک آگهی شیپور">
+                    </div>
+                    <div class="actions">
+                        <button type="submit" class="save-btn">
+                        💾 ذخیره اطلاعات
+                        </button>
+                        
+                        <button type="button" id="resetBtn" class="reset-btn">
+                        بازگردانی آخرین ذخیره
+                        </button>
+                        </div>
+                        
+                        <p id="status" class="status" role="status"></p>
+                        </form>
+                        </div>
+                        
+                        <script>
+                        const form = document.getElementById("settingsForm");
+                        const statusBox = document.getElementById("status");
+                        const storageKey = "noroziBusinessSettings";
+                        
+                        const fieldNames = [
+                            "businessName",
+                            "description",
+                            "address",
+                            "hours",
+                            "phone",
+                            "phone2",
+                            "whatsapp",
+                            "telegram1",
+                            "telegram2",
+                            "rubika",
+                            "divar",
+                            "sheypoor"
+                        ];
+                        
+                        function getFormData() {
+                            const data = {};
+                        
+                            fieldNames.forEach(name => {
+                                data[name] = document.getElementById(name).value.trim();
+                            });
+                        
+                            return data;
+                        }
+                        </script>
+      <script>
+        function loadSavedData() {
+            try {
+                const saved = localStorage.getItem(storageKey);
+        
+                if (!saved) {
+                    statusBox.textContent =
+                        "هنوز اطلاعاتی ذخیره نشده است.";
+                    return;
+                }
+        
+                const data = JSON.parse(saved);
+        
+                fieldNames.forEach(name => {
+                    if (typeof data[name] === "string") {
+                        document.getElementById(name).value = data[name];
+                    }
+                });
+        
+                statusBox.textContent =
+                    "اطلاعات ذخیره‌شده بارگذاری شد.";
+            } catch (error) {
+                statusBox.textContent =
+                    "بارگذاری اطلاعات ناموفق بود.";
+            }
+        }
+        
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+        
+            try {
+                localStorage.setItem(
+                    storageKey,
+                    JSON.stringify(getFormData())
+                );
+        
+                statusBox.textContent =
+                    "اطلاعات در این مرورگر ذخیره شد.";
+            } catch (error) {
+                statusBox.textContent = "ذخیره ناموفق بود.";
+            }
+        });
+        
+        document.getElementById("resetBtn").addEventListener(
+            "click",
+            loadSavedData
+        );
+        
+        loadSavedData();
+        </script>
+        
+        </body>
+        </html>                           
